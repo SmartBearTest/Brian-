@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="82387bcc-beb5-4c8f-910d-ee0ab5282c6c" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_class_array_input_array TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="82387bcc-beb5-4c8f-910d-ee0ab5282c6cfileName">test_class_array_input_array-TestCase</con:setting></con:settings><con:testStep type="request" id="cdceb418-5f58-49c5-8b61-73c521e05f67" name="test_class_array_input_array"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Test_serviceSoap12</con:interface><con:operation>test_class_array_input_array</con:operation><con:request name="test_class_array_input_array" id="84f9df7f-fa70-459b-8447-f301278d794f"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_array_input_array>\r
+         <!--Optional:-->\r
+         <ser:tt>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:tt>\r
+      </ser:test_class_array_input_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_array_input_arrayRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

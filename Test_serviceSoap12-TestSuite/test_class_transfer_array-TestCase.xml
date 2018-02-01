@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0b6845e1-7cb6-4905-a5e4-271f05412b8e" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_class_transfer_array TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0b6845e1-7cb6-4905-a5e4-271f05412b8efileName">test_class_transfer_array-TestCase</con:setting></con:settings><con:testStep type="request" id="b1fb6e1d-0f9c-4b24-8175-aa2f5af271fd" name="test_class_transfer_array"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Test_serviceSoap12</con:interface><con:operation>test_class_transfer_array</con:operation><con:request name="test_class_transfer_array" id="1d88623f-bc1b-4d74-9428-def8f00c2b34"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:test_class_transfer_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_transfer_arrayRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

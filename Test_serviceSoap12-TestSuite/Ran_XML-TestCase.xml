@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4ab186ee-7224-404f-a88b-90d4b1460365" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Ran_XML TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4ab186ee-7224-404f-a88b-90d4b1460365fileName">Ran_XML-TestCase</con:setting></con:settings><con:testStep type="request" id="a8e50512-70eb-475d-b4b7-9cbfbe844a64" name="Ran_XML"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Test_serviceSoap12</con:interface><con:operation>Ran_XML</con:operation><con:request name="Ran_XML" id="6d17e15a-fa88-4b28-884d-b37eaf912241"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Ran_XML>\r
+         <ser:x>?</ser:x>\r
+      </ser:Ran_XML>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Ran_XMLRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="bfbd2c6d-5fd8-4312-92f7-c6b84de073c9" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="delay_response TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bfbd2c6d-5fd8-4312-92f7-c6b84de073c9fileName">delay_response-TestCase</con:setting></con:settings><con:testStep type="request" id="6d20b5f9-ded2-40e5-bc0d-6b1b57b3c08e" name="delay_response"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Test_serviceSoap12</con:interface><con:operation>delay_response</con:operation><con:request name="delay_response" id="71314181-055f-4c3f-84df-519b35865d2a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:delay_response>\r
+         <ser:t>?</ser:t>\r
+      </ser:delay_response>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/delay_responseRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

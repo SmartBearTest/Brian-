@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3ec441a9-ff1c-4064-80e4-f185cf4b83bb" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Con_Stroka TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3ec441a9-ff1c-4064-80e4-f185cf4b83bbfileName">Con_Stroka-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="3738a492-06c2-4437-8c97-d1c0175ed34e" name="Task 1 Con_Stroka"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Test_serviceSoap</con:interface><con:operation>Con_Stroka</con:operation><con:request name="Task 1 Con_Stroka" id="77c2ac71-46d3-4df1-bf69-d8b21e83911e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Test" value="Test" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>\r
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header />\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>hi</ser:x>\r
+         <!--Optional:-->\r
+         <ser:y>hi</ser:y>\r
+      </ser:Con_Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>\r
+]]></con:request><con:assertion type="Simple Equals" id="0d15331c-8727-4085-98a2-ad39bc0c32e6" name="Equals"><con:configuration><patternText>Con_StrokaResponse</patternText><caseSensitive>true</caseSensitive></con:configuration></con:assertion><con:assertion type="Simple Equals" id="7d15f095-e3e8-44bf-bb5d-eb591bc6215c" name="Equals 2"><con:configuration><patternText>&lt;Con_StrokaResult>hi hi&lt;/Con_StrokaResult>
+</patternText><caseSensitive>true</caseSensitive></con:configuration></con:assertion><con:assertion type="Simple Equals" id="f4eec0e9-c6dd-4a72-8986-1ddb13d640b5" name="Equals 3"><con:configuration><patternText> &lt;ser:y>hi&lt;/ser:y></patternText><caseSensitive>true</caseSensitive></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://localhost/test_service/Service1.asmx/Con_Stroka" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
